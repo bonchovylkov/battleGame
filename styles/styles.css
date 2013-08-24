@@ -1,0 +1,173 @@
+﻿ #wrapper {
+            width: 65%;
+            margin-left:370px;
+            text-align: center;
+            border: 1px solid black;
+            margin-top: 50px;
+            font: normal 14px Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+            padding:10px;
+            border-radius:5px;
+           background-image: url(../imgs/pattern.png);
+
+        }
+
+            #wrapper > header {
+            }
+
+        #user-nickname {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #444;
+            border-radius: 3px;
+            text-decoration: none;
+            color: black;
+            background-color: #ccc;
+        }
+
+        #open-games-container {
+            float: left;
+        }
+
+        #active-games-container {
+            float: right;
+        }
+
+        #content {
+            zoom: 1;
+        }
+
+            #content:after {
+                clear: both;
+                display: block;
+                height: 0;
+                content: "";
+            }
+
+        #create-game-holder {
+            display: inline-block;
+            text-align: right;
+        }
+
+        .button.selected {
+            font-weight: bold;
+        }
+
+        .game-list {
+            list-style-type: none;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #active-games-container a, #open-games-container a {
+            color: #222;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+            #active-games-container a:hover, #open-games-container a:hover {
+                text-decoration: underline;
+            }
+
+        #active-games-container .full {
+            color: red;
+        }
+        #active-games-container .full:after{
+            content:"-full";
+        }
+
+        #game-state {
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            border:1px solid black;
+            margin-left:130px;
+            padding:5px;
+            margin-top:20px;
+            background-image: url(../imgs/game-pattern.jpg);
+            border-radius:5px;
+            background-image: url(../imgs/wood.jpg);
+            background-image: url(../imgs/wood2.jpg);
+        }
+
+            #game-state .guess-holder {
+                text-align: center;
+                margin: 0 auto;
+            }
+
+        #all-msg-container {
+            float: right;
+            width: 100%;
+        }
+
+        #unread-msg-container {
+            float: right;
+            width: 100%;
+        }
+
+        #score-board{
+            position:absolute;
+            top:50px;
+            left:20px;
+            border:1px solid black;
+            padding-left:-10px;
+            padding-right:10px;
+            border-radius:5px;
+            background:url('../imgs/scores.jpg');
+        }
+         #score-board li {
+             list-style:none;
+             text-align:left;
+         }
+
+        
+         #all-msgs{
+                          border:1px solid black;
+                          background-color:skyblue;
+         }
+         #all-msgs span,#unread-msgs span{
+             float:left;
+             margin-left:20px;
+         }
+         #show-messages{
+             border:1px solid black;
+             border-radius:10px;
+             padding:5px 10px;
+             background-color:skyblue;
+             cursor:pointer;
+         }
+         .open{
+             color:green!important;
+         }
+         .open:after{
+             content:" -open";
+         }
+
+         .in-progress{
+             color:blue!important;
+         }
+         .in-progress:after{
+             content:" -in-progress";
+         }
+         #blue-player h3{
+             color:blue;
+         }
+
+         #red-player h3{
+             color:red;
+         }
+         td{
+             border:1px solid black;
+             height:36px;
+             width:40px;
+         }
+         input#selected-cell{
+             width:30px;
+         }
+         input#destination{
+             width:30px;
+         }
